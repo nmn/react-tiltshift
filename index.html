@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="React-tiltshift : React component to create tilt-shift images">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>React-tiltshift</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/gustavoguichard/react-tiltshift">View on GitHub</a>
+
+          <h1 id="project_title">React-tiltshift</h1>
+          <h2 id="project_tagline">React component to create tilt-shift images</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/gustavoguichard/react-tiltshift/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/gustavoguichard/react-tiltshift/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="react-tiltshift" class="anchor" href="#react-tiltshift" aria-hidden="true"><span class="octicon octicon-link"></span></a>react-tiltshift</h1>
+
+<p>React component to create images tiltshift.</p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<pre><code>import TiltShift from './tiltshift'
+
+&lt;TiltShift src="../images/sf.jpg" position="38" width="600" /&gt;
+</code></pre>
+
+<p>You just need to pass the <code>src</code> prop. You can pass any attribute you'd normally pass to a <code>img</code> html tag. You can pass the following props to configure the effect:</p>
+
+<ul>
+<li>aperture (0-100): the amount of area that is in focus. 10 would mean one tenth of the image is sharp.</li>
+<li>blur (0-10): the blur radius in pixels. Something between 1 or 2 usually gives the best results.</li>
+<li>direction (“horizontal”, “vertical”, or 0-360): the direction of the effect with zero at right.</li>
+<li>position (0-100): defines the point of focus. 50 would be the image middle.</li>
+<li>smoothness (0-100): the amount of area between complete focus and complete blur. The higher the value, the “smoother" the blur.</li>
+</ul>
+
+<h5>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h5>
+
+<p><em>Before:</em></p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/566971/7811816/9757830c-0383-11e5-88c7-6b19a967393e.jpg" alt="screen-shot-2015-05-26-at-8 39 40-am"></p>
+
+<p><em>After:</em></p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/566971/7811815/9733d4de-0383-11e5-977b-4862412b3d67.jpg" alt="screen-shot-2015-05-26-at-8 39 12-am"></p>
+
+<h3>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h3>
+
+<ul>
+<li>React</li>
+<li>Webpack</li>
+<li><a href="https://github.com/webpack/webpack-dev-server">webpack-dev-server</a></li>
+<li><a href="https://github.com/babel/babel-loader">babel-loader</a></li>
+<li><a href="https://github.com/gaearon/react-hot-loader">react-hot-loader</a></li>
+</ul>
+
+<h3>
+<a id="inspiration--base" class="anchor" href="#inspiration--base" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inspiration &amp; Base</h3>
+
+<ul>
+<li><a href="http://www.noeltock.com/tilt-shift-css3-jquery-plugin/">jQuery tiltShift.js</a></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">React-tiltshift maintained by <a href="https://github.com/gustavoguichard">gustavoguichard</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
